@@ -49,7 +49,8 @@
     "test:node": "npm install --prefix ./test/node/cjs/ && npm install --prefix ./test/node/esm/ && node ./test/node/cjs/index.js && node ./test/node/esm/index.js",
     "build": "rimraf dist && tsc --project tsconfig.esm.json && tsc --project tsconfig.cjs.json",
     "release": "npm run build && npm run test && npm publish --access public",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "bun run build"
   },
   "peerDependencies": {
     "elysia": ">= 1.0.2"
