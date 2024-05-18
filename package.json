@@ -50,7 +50,7 @@
     "build": "rimraf dist && tsc --project tsconfig.esm.json && tsc --project tsconfig.cjs.json",
     "release": "npm run build && npm run test && npm publish --access public",
     "format": "prettier --write .",
-    "prepare": "bun run build"
+    "prepare": "tsc --project tsconfig.esm.json && tsc --project tsconfig.cjs.json"
   },
   "peerDependencies": {
     "elysia": ">= 1.0.2"
