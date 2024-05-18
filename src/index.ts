@@ -1,4 +1,4 @@
-import { createElement } from './h'
+// import { createElement } from './h'
 
 export * from './html'
 export * from './options'
@@ -11,6 +11,6 @@ export { ErrorBoundary } from '@kitajs/html/error-boundary'
 export { Suspense } from '@kitajs/html/suspense'
 
 export { Html } from '@kitajs/html'
-export { createElement }
+// export { createElement }
 
-Html.createElement = createElement
+// Html.createElement = createElement
